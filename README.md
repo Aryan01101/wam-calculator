@@ -2,6 +2,10 @@
 
 A web-based Weighted Average Mark (WAM) calculator for University of Sydney students. This tool helps students calculate their WAM by considering unit marks and credit points.
 
+## Live Website
+
+Visit the calculator here: [WAM Calculator](https://Aryan01101.github.io/wam-calculator)
+
 ## Features
 
 - Calculate WAM based on unit marks and credit points
@@ -60,6 +64,16 @@ npm start
 ```
 
 The application will open in your default browser at `http://localhost:3000`.
+
+## Deployment
+
+The website is deployed using GitHub Pages. To deploy new changes:
+
+```bash
+npm run deploy
+```
+
+The changes will be live at: https://Aryan01101.github.io/wam-calculator
 
 ## Contributing
 
