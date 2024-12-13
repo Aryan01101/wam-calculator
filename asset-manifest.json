@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/wam-calculator/static/css/main.9caacc43.css",
+    "main.js": "/wam-calculator/static/js/main.5aab6974.js",
+    "static/js/453.f11b37d3.chunk.js": "/wam-calculator/static/js/453.f11b37d3.chunk.js",
+    "index.html": "/wam-calculator/index.html",
+    "main.9caacc43.css.map": "/wam-calculator/static/css/main.9caacc43.css.map",
+    "main.5aab6974.js.map": "/wam-calculator/static/js/main.5aab6974.js.map",
+    "453.f11b37d3.chunk.js.map": "/wam-calculator/static/js/453.f11b37d3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9caacc43.css",
+    "static/js/main.5aab6974.js"
+  ]
+}
