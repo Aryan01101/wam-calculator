@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# WAM Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web-based Weighted Average Mark (WAM) calculator for University of Sydney students. This tool helps students calculate their WAM by considering unit marks and credit points.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Calculate WAM based on unit marks and credit points
+- Add/remove units dynamically
+- Persistent storage (results remain after page refresh)
+- Real-time validation of inputs
+- Clear and intuitive user interface
 
-### `npm start`
+## How WAM is Calculated
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The Weighted Average Mark (WAM) is calculated using the following formula:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+WAM = Σ(marks × credit point value) / Σ(credit point value)
 
-### `npm test`
+All units have an equal weighting of one. The calculator:
+1. Multiplies each unit's mark by its credit point value
+2. Adds these totals together
+3. Divides by the sum of all credit points attempted
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `npm run build`
+1. Enter the unit name (optional)
+2. Input your mark (0-100)
+3. Enter the credit points for the unit
+4. Add more units as needed using the "Add Unit" button
+5. Click "Calculate WAM" to see your result
+6. Use "Clear All" to reset the calculator
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React.js
+- TailwindCSS
+- LocalStorage for data persistence
+- Lucide React for icons
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+1. Clone the repository:
+```bash
+git clone https://github.com/Aryan01101/wam-calculator.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Navigate to the project directory:
+```bash
+cd wam-calculator
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install dependencies:
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Start the development server:
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The application will open in your default browser at `http://localhost:3000`.
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
+This project is open source and available under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Acknowledgments
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- University of Sydney for the WAM calculation formula and guidelines
+- React and TailwindCSS communities for excellent documentation
